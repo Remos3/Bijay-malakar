@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Bijoy Malakar | Official Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .custom-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; text-align: left; }
+        .custom-table th, .custom-table td { padding: 12px 15px; border: 1px solid #ddd; }
+        .custom-table th { background-color: var(--light-bg); color: var(--green); font-weight: 700; width: 30%; }
+        .timeline { border-left: 3px solid var(--saffron); padding-left: 20px; margin-left: 10px; }
+        .timeline-item { margin-bottom: 25px; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: -28px; top: 5px; width: 12px; height: 12px; background: var(--green); border-radius: 50%; }
+        .timeline-year { font-weight: bold; color: var(--saffron); font-size: 1.2rem; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header (Same as index) -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-area"><h1>BIJOY MALAKAR</h1></div>
+            <button class="hamburger-btn" id="hamburgerBtn"><i class="fa-solid fa-bars"></i></button>
+            <nav class="desktop-nav">
+                <a href="index.html" data-i18n="nav_home">Home</a>
+                <a href="about.html" class="active" data-i18n="nav_about">Biography</a>
+                <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar (Same as index) -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="sidebar-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="about.html" class="active" data-i18n="nav_about">Biography</a>
+            <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main style="margin-top: 90px;">
+        <div class="container" style="max-width: 900px; padding-bottom: 60px;">
+            
+            <h2 class="section-title text-center">About Bijoy Malakar</h2>
+            <div class="section-line"></div>
+            
+            <p style="margin-bottom: 20px; font-size: 1.1rem; color: var(--gray-text);">
+                Bijoy Malakar is an Indian politician from Assam and a dedicated member of the Bharatiya Janata Party (BJP). He is the elected Member of the Assam Legislative Assembly from the Ram Krishna Nagar (SC) constituency in Sribhumi district. Known for his simple lifestyle, grassroots connection, and commitment to local development.
+            </p>
+
+            <!-- Personal Details Table -->
+            <h3 style="color: var(--green); margin: 40px 0 15px;">Personal Details</h3>
+            <table class="custom-table">
+                <tr><th>Full Name</th><td>Bijoy Malakar</td></tr>
+                <tr><th>Date of Birth</th><td>1 January 1980</td></tr>
+                <tr><th>Birthplace</th><td>Karimganj district, Assam</td></tr>
+                <tr><th>Father's Name</th><td>Sankar Malakar</td></tr>
+                <tr><th>Mother's Name</th><td>Pranoti Malakar</td></tr>
+                <tr><th>Political Party</th><td>Bharatiya Janata Party (BJP)</td></tr>
+                <tr><th>Current Position</th><td>MLA, Assam Legislative Assembly</td></tr>
+                <tr><th>Constituency</th><td>Ram Krishna Nagar (SC), Constituency No. 126</td></tr>
+                <tr><th>District</th><td>Sribhumi, Assam</td></tr>
+                <tr><th>In Public Service Since</th><td>2019</td></tr>
+            </table>
+
+            <!-- Political Journey -->
+            <h3 style="color: var(--green); margin: 40px 0 20px;">Political Journey</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2019 — First Election Victory</div>
+                    <p>He began his legislative career in 2019, winning the Ratabari Assembly by-election on a BJP ticket. His victory marked the beginning of his journey as a public representative.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 — Re-elected from Ratabari</div>
+                    <p>In the 2021 Assam Legislative Assembly election, he was re-elected from the Ratabari (SC) constituency, reflecting the trust and support of the people.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023 — Constituency Delimitation</div>
+                    <p>Following Assam's 2023 delimitation process, Ratabari was redrawn and renamed Ram Krishna Nagar. Bijoy Malakar continued to represent the people.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2026 — Historic Victory from Ram Krishna Nagar</div>
+                    <p>Won from Ram Krishna Nagar (SC) with 1,34,013 votes, defeating his nearest rival by a margin of 83,765 votes.</p>
+                </div>
+            </div>
+
+            <!-- Election Record -->
+            <h3 style="color: var(--green); margin: 40px 0 15px;">Election Record</h3>
+            <table class="custom-table" style="text-align: center;">
+                <tr>
+                    <th style="text-align: center;">Year</th>
+                    <th style="text-align: center;">Constituency</th>
+                    <th style="text-align: center;">Party</th>
+                    <th style="text-align: center;">Result</th>
+                </tr>
+                <tr><td>2019</td><td>Ratabari</td><td>BJP</td><td>Elected in by-election</td></tr>
+                <tr><td>2021</td><td>Ratabari (SC)</td><td>BJP</td><td>Re-elected</td></tr>
+                <tr><td>2026</td><td>Ram Krishna Nagar (SC)</td><td>BJP</td><td>Elected with 1,34,013 votes</td></tr>
+            </table>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark-text); color: white; padding: 30px 0; text-align: center;">
+        <p data-i18n="footer_text">&copy; 2026 Bijoy Malakar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
