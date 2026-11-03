@@ -28,11 +28,11 @@ ul { list-style: none; }
 .btn-outline { background: transparent; border: 2px solid var(--green); color: var(--green); }
 .btn-outline:hover { background: var(--green); color: var(--white); }
 
-/* Header */
-.site-header { position: fixed; top: 0; width: 100%; background: var(--white); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.08); border-top: 4px solid var(--saffron); }
+/* --- NAYA HEADER DESIGN --- */
+.site-header { position: fixed; top: 0; width: 100%; background: var(--saffron); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); border-bottom: 3px solid var(--green); }
 .header-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
-.logo-area h1 { font-size: 1.5rem; color: var(--saffron); font-weight: 700; margin: 0; }
-.hamburger-btn { background: none; border: none; font-size: 1.8rem; color: var(--saffron); cursor: pointer; display: block; }
+.logo-area h1 { font-size: 1.5rem; color: var(--white); font-weight: 700; margin: 0; }
+.hamburger-btn { background: none; border: none; font-size: 1.8rem; color: var(--white); cursor: pointer; display: block; }
 .desktop-nav { display: none; }
 
 /* Sidebar */
@@ -77,7 +77,9 @@ ul { list-style: none; }
 @media (min-width: 992px) {
     .hamburger-btn { display: none; }
     .desktop-nav { display: flex; align-items: center; gap: 30px; }
-    .desktop-nav a { font-weight: 600; color: var(--dark-text); text-transform: uppercase; }
-    .desktop-nav a.active, .desktop-nav a:hover { color: var(--saffron); }
+    /* Desktop menu links ko safed (white) kiya gaya hai */
+    .desktop-nav a { font-weight: 600; color: var(--white); text-transform: uppercase; }
+    /* Hover karne par background white aur text saffron ho jayega */
+    .desktop-nav a.active, .desktop-nav a:hover { background: var(--white); color: var(--saffron); padding: 5px 12px; border-radius: 4px; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-                    }
+}
