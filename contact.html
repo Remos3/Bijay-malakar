@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Bijoy Malakar | Official Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; text-align: left; }
+        .contact-info { background: var(--white); padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--saffron); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--green); }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+        @media(max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-area"><h1>BIJOY MALAKAR</h1></div>
+            <button class="hamburger-btn" id="hamburgerBtn"><i class="fa-solid fa-bars"></i></button>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">Biography</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="sidebar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Biography</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main style="margin-top: 90px; padding-bottom: 60px;">
+        <div class="container">
+            <h2 class="section-title text-center">Contact & Grievances</h2>
+            <div class="section-line"></div>
+
+            <div class="contact-grid">
+                <!-- Constituency Office Details -->
+                <div class="contact-info">
+                    <h3 style="color: var(--green); margin-bottom: 20px;">Constituency Office</h3>
+                    <p style="font-weight: bold; font-size: 1.1rem;">Office of Bijoy Malakar, MLA</p>
+                    <p style="color: var(--gray-text); margin-bottom: 20px;">Ram Krishna Nagar Constituency<br>Sribhumi District, Assam</p>
+                    
+                    <h4 style="margin-top: 30px; margin-bottom: 10px;">Follow on Social Media</h4>
+                    <div class="social-grid" style="justify-content: flex-start; gap: 15px;">
+                        <a href="#" class="social-icon fb" style="width: 45px; height: 45px; font-size: 1.2rem;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon tw" style="width: 45px; height: 45px; font-size: 1.2rem;"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon ig" style="width: 45px; height: 45px; font-size: 1.2rem;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon yt" style="width: 45px; height: 45px; font-size: 1.2rem;"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Public Grievances Form -->
+                <div class="contact-info">
+                    <h3 style="color: var(--green); margin-bottom: 20px;">Public Grievances & Appointments</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div>
+                                <label>Village / Ward</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div>
+                                <label>Constituency</label>
+                                <input type="text" class="form-control" value="Ram Krishna Nagar" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <input type="tel" class="form-control" required placeholder="10-digit mobile number">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject / Issue</label>
+                            <input type="text" class="form-control" required placeholder="Brief subject of your grievance">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="4" required placeholder="Describe your issue or appointment request in detail..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark-text); color: white; padding: 30px 0; text-align: center;">
+        <p style="font-weight: bold; margin-bottom: 10px;">Bijoy Malakar | Bharatiya Janata Party (BJP)</p>
+        <p>&copy; 2026 Bijoy Malakar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
