@@ -83,3 +83,13 @@ ul { list-style: none; }
     .desktop-nav a.active, .desktop-nav a:hover { background: var(--white); color: var(--saffron); padding: 5px 12px; border-radius: 4px; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 }
+/* --- WORKS SCROLL SECTION (Home Page) --- */
+.works-scroll-container { display: flex; gap: 20px; overflow-x: auto; padding: 20px 10px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--saffron) var(--light-bg); }
+.works-scroll-container::-webkit-scrollbar { height: 6px; }
+.works-scroll-container::-webkit-scrollbar-thumb { background-color: var(--saffron); border-radius: 10px; }
+.work-card { min-width: 280px; max-width: 300px; background: var(--white); border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; scroll-snap-align: start; border-bottom: 4px solid var(--saffron); text-align: left; transition: transform 0.3s ease; flex-shrink: 0; }
+.work-card:hover { transform: translateY(-5px); }
+.work-card img { width: 100%; height: 200px; object-fit: cover; }
+.work-details { padding: 20px; }
+.work-details h4 { color: var(--green); margin-bottom: 10px; font-size: 1.1rem; }
+.work-details p { font-size: 0.9rem; color: var(--gray-text); }
