@@ -34,8 +34,8 @@ ul { list-style: none; }
 .logo-area { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
 .header-logo-img { height: 38px; width: 38px; border-radius: 50%; object-fit: cover; border: 2px solid white; flex-shrink: 0; }
 .header-title-box { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
-.header-main-title { margin: 0; font-size: 0.9rem; color: white; white-space: nowrap; font-weight: 700; line-height: 1.1; }
-.header-subtitle-line { font-size: 0.52rem; color: #000000; font-weight: 600; white-space: nowrap; line-height: 1.2; margin-top: 1px; }
+.header-main-title { margin: 0; font-size: 0.95rem; color: white; white-space: nowrap; font-weight: 700; line-height: 1.1; }
+.header-subtitle-line { font-size: 0.58rem; color: #000000; font-weight: 600; white-space: nowrap; line-height: 1.2; margin-top: 1px; }
 
 .hamburger-btn { background: none; border: none; font-size: 1.5rem; color: var(--white); cursor: pointer; display: block; padding: 4px; flex-shrink: 0; }
 .desktop-nav { display: none; }
@@ -98,7 +98,7 @@ ul { list-style: none; }
 
 /* --- WORKS SCROLL SECTION (Home Page) --- */
 .works-heading-main { font-size: 1.5rem; }
-.works-scroll-container { display: flex; gap: 15px; overflow-x: auto; padding: 15px 10px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--saffron> var(--light-bg); }
+.works-scroll-container { display: flex; gap: 15px; overflow-x: auto; padding: 15px 10px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--saffron) var(--light-bg); }
 .works-scroll-container::-webkit-scrollbar { height: 6px; }
 .works-scroll-container::-webkit-scrollbar-thumb { background-color: var(--saffron); border-radius: 10px; }
 .work-card { min-width: 260px; max-width: 280px; background: var(--white); border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; scroll-snap-align: start; border-bottom: 4px solid var(--saffron); text-align: left; flex-shrink: 0; transition: transform 0.3s ease; }
@@ -107,4 +107,4 @@ ul { list-style: none; }
 .work-details { padding: 15px; }
 .work-details h4 { color: var(--green); margin-bottom: 8px; font-size: 1rem; }
 .work-details p { font-size: 0.85rem; color: var(--gray-text); }
-                         
+                                                                                                                            
