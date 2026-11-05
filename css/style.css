@@ -28,7 +28,7 @@ ul { list-style: none; }
 .btn-outline { background: transparent; border: 2px solid var(--green); color: var(--green); }
 .btn-outline:hover { background: var(--green); color: var(--white); }
 
-/* --- HEADER DESIGN (Updated Sizes) --- */
+/* --- HEADER DESIGN --- */
 .site-header { position: fixed; top: 0; width: 100%; background: var(--saffron); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); border-bottom: 3px solid var(--green); }
 .header-container { display: flex; justify-content: space-between; align-items: center; height: 70px; padding: 0 12px; }
 .logo-area { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
@@ -63,7 +63,60 @@ ul { list-style: none; }
 .section-title { font-size: 2rem; color: var(--saffron); margin-bottom: 10px; }
 .section-line { width: 60px; height: 3px; background: var(--green); margin: 0 auto 30px; }
 .bg-white { background: var(--white); }
-.card { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #eee; }
+
+/* --- CARDS & SPACING FIX (No overlapping text) --- */
+.card, .works-detailed-card { 
+    background: var(--white); 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06); 
+    border: 1px solid #eaeaea; 
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* Card Titles / Headers inside cards */
+.works-detailed-card h4, .card h4, .card h3 {
+    padding: 18px 18px 8px 18px;
+    margin: 0;
+    font-size: 1.15rem;
+    color: var(--dark-text);
+    font-weight: 700;
+}
+
+/* Card Images */
+.card img, .work-img { 
+    width: 100%; 
+    height: 220px; 
+    object-fit: cover; 
+    display: block; 
+    border-bottom: 2px solid var(--saffron);
+}
+
+/* Card Descriptions / Body Text */
+.work-desc, .work-details, .card div[style*="padding"] { 
+    padding: 15px 18px 20px 18px !important; 
+}
+
+.work-details p, .work-desc p, .card p {
+    font-size: 0.92rem;
+    color: var(--gray-text);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Category Titles on Works Page */
+.works-category-title {
+    font-size: 1.35rem;
+    color: var(--green);
+    margin: 40px 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 5px solid var(--saffron);
+    padding-left: 12px;
+    font-weight: 700;
+}
 
 /* Hero Section */
 .hero-section { padding: 40px 20px 0; text-align: center; }
@@ -82,12 +135,12 @@ ul { list-style: none; }
 .vision-card-title { color: var(--green); margin-bottom: 10px; }
 .vision-card-desc { font-size: 0.9rem; }
 
-/* Grids Fix */
-.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+/* Grids */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 
 /* Footer */
-.site-footer { background: var(--dark-text); color: white; padding: 30px 0; text-align: center; }
+.site-footer { background: var(--dark-text); color: white; padding: 35px 0; text-align: center; }
 .footer-title { font-weight: bold; margin-bottom: 10px; }
 
 @media (min-width: 992px) {
@@ -97,8 +150,8 @@ ul { list-style: none; }
     .desktop-nav a.active, .desktop-nav a:hover { background: var(--white); color: var(--saffron); padding: 5px 12px; border-radius: 4px; }
     .header-main-title { font-size: 1.3rem; }
     .header-subtitle-line { font-size: 0.7rem; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
 }
 
 /* --- WORKS SCROLL SECTION (Home Page) --- */
@@ -108,8 +161,7 @@ ul { list-style: none; }
 .works-scroll-container::-webkit-scrollbar-thumb { background-color: var(--saffron); border-radius: 10px; }
 .work-card { min-width: 260px; max-width: 280px; background: var(--white); border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; scroll-snap-align: start; border-bottom: 4px solid var(--saffron); text-align: left; flex-shrink: 0; transition: transform 0.3s ease; }
 .work-card:hover { transform: translateY(-5px); }
-.work-card img, .card img { width: 100%; height: 180px; object-fit: cover; border-bottom: 2px solid var(--saffron); }
+.work-card img { width: 100%; height: 180px; object-fit: cover; border-bottom: 2px solid var(--saffron); }
 .work-details { padding: 15px; }
 .work-details h4 { color: var(--green); margin-bottom: 8px; font-size: 1rem; }
 .work-details p { font-size: 0.85rem; color: var(--gray-text); }
-    
