@@ -28,7 +28,7 @@ ul { list-style: none; }
 .btn-outline { background: transparent; border: 2px solid var(--green); color: var(--green); }
 .btn-outline:hover { background: var(--green); color: var(--white); }
 
-/* --- NAYA HEADER DESIGN --- */
+/* --- HEADER DESIGN --- */
 .site-header { position: fixed; top: 0; width: 100%; background: var(--saffron); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); border-bottom: 3px solid var(--green); }
 .header-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
 .logo-area h1 { font-size: 1.5rem; color: var(--white); font-weight: 700; margin: 0; }
@@ -77,22 +77,10 @@ ul { list-style: none; }
 @media (min-width: 992px) {
     .hamburger-btn { display: none; }
     .desktop-nav { display: flex; align-items: center; gap: 30px; }
-    /* Desktop menu links ko safed (white) kiya gaya hai */
     .desktop-nav a { font-weight: 600; color: var(--white); text-transform: uppercase; }
-    /* Hover karne par background white aur text saffron ho jayega */
     .desktop-nav a.active, .desktop-nav a:hover { background: var(--white); color: var(--saffron); padding: 5px 12px; border-radius: 4px; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 }
-/* --- WORKS SCROLL SECTION (Home Page) --- */
-.works-scroll-container { display: flex; gap: 20px; overflow-x: auto; padding: 20px 10px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--saffron) var(--light-bg); }
-.works-scroll-container::-webkit-scrollbar { height: 6px; }
-.works-scroll-container::-webkit-scrollbar-thumb { background-color: var(--saffron); border-radius: 10px; }
-.work-card { min-width: 280px; max-width: 300px; background: var(--white); border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; scroll-snap-align: start; border-bottom: 4px solid var(--saffron); text-align: left; transition: transform 0.3s ease; flex-shrink: 0; }
-.work-card:hover { transform: translateY(-5px); }
-.work-card img { width: 100%; height: 200px; object-fit: cover; }
-.work-details { padding: 20px; }
-.work-details h4 { color: var(--green); margin-bottom: 10px; font-size: 1.1rem; }
-.work-details p { font-size: 0.9rem; color: var(--gray-text); }
 
 /* --- WORKS SCROLL SECTION (Home Page) --- */
 .works-scroll-container { display: flex; gap: 20px; overflow-x: auto; padding: 20px 10px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: var(--saffron) var(--light-bg); }
@@ -104,3 +92,43 @@ ul { list-style: none; }
 .work-details { padding: 20px; }
 .work-details h4 { color: var(--green); margin-bottom: 10px; font-size: 1.1rem; }
 .work-details p { font-size: 0.9rem; color: var(--gray-text); }
+
+/* --- WORKS DETAILED PAGE STYLES --- */
+.works-page-title {
+    font-size: 1.4rem; 
+    white-space: nowrap;
+}
+.works-category-title {
+    color: var(--saffron); 
+    margin: 30px 0 20px; 
+    font-size: 1.15rem; 
+    border-bottom: 2px solid var(--green); 
+    padding-bottom: 8px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.works-detailed-card .work-card-header {
+    padding: 12px 15px; 
+    background: var(--light-bg);
+}
+.works-detailed-card .work-card-header h4 {
+    color: var(--green); 
+    margin: 0; 
+    font-size: 1.05rem;
+}
+.works-detailed-card .work-img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-top: 2px solid var(--saffron); 
+    border-bottom: 2px solid var(--saffron);
+}
+.works-detailed-card .work-desc {
+    padding: 15px;
+}
+.works-detailed-card .work-desc p {
+    font-size: 0.9rem; 
+    color: var(--gray-text); 
+    margin: 0;
+}
