@@ -82,6 +82,10 @@ ul { list-style: none; }
 .vision-card-title { color: var(--green); margin-bottom: 10px; }
 .vision-card-desc { font-size: 0.9rem; }
 
+/* Grids Fix */
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+
 /* Footer */
 .site-footer { background: var(--dark-text); color: white; padding: 30px 0; text-align: center; }
 .footer-title { font-weight: bold; margin-bottom: 10px; }
@@ -94,6 +98,7 @@ ul { list-style: none; }
     .header-main-title { font-size: 1.3rem; }
     .header-subtitle-line { font-size: 0.7rem; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 }
 
 /* --- WORKS SCROLL SECTION (Home Page) --- */
@@ -103,8 +108,8 @@ ul { list-style: none; }
 .works-scroll-container::-webkit-scrollbar-thumb { background-color: var(--saffron); border-radius: 10px; }
 .work-card { min-width: 260px; max-width: 280px; background: var(--white); border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); overflow: hidden; scroll-snap-align: start; border-bottom: 4px solid var(--saffron); text-align: left; flex-shrink: 0; transition: transform 0.3s ease; }
 .work-card:hover { transform: translateY(-5px); }
-.work-card img { width: 100%; height: 180px; object-fit: cover; border-bottom: 2px solid var(--saffron); }
+.work-card img, .card img { width: 100%; height: 180px; object-fit: cover; border-bottom: 2px solid var(--saffron); }
 .work-details { padding: 15px; }
 .work-details h4 { color: var(--green); margin-bottom: 8px; font-size: 1rem; }
 .work-details p { font-size: 0.85rem; color: var(--gray-text); }
-                
+    
