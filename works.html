@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <!-- HEADER -->
+    <!-- HEADER (VIP Saffron Theme) -->
     <header class="site-header">
         <div class="container header-container">
             <div class="logo-area" style="display: flex; align-items: center; gap: 10px;">
@@ -28,54 +28,164 @@
         </div>
     </header>
 
+    <!-- MOBILE SIDEBAR -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="sidebar-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="about.html" data-i18n="nav_about">Biography</a>
+            <a href="works.html" class="active">Works</a>
+            <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+            <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        </div>
+        <div class="lang-box">
+            <p data-i18n="select_lang">Choose Language</p>
+            <div class="lang-btns">
+                <button data-lang="en">EN</button>
+                <button data-lang="hi">हिंदी</button>
+                <button data-lang="bn">বাংলা</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
     <main style="margin-top: 70px;">
         <section class="section-padding bg-white">
             <div class="container">
                 <h2 class="section-title text-center">Detailed Development Works</h2>
                 <div class="section-line"></div>
                 
-                <div style="max-width: 900px; margin: 0 auto; line-height: 1.8;">
-                    
-                    <h3 style="color: var(--green); margin-top: 30px;"><i class="fa-solid fa-hospital"></i> Health & Major Infrastructure</h3>
-                    <ul style="list-style-type: disc; margin-left: 20px; color: var(--gray-text);">
-                        <li>Ongoing construction of Medical College and Hospital at Ramkrishna Nagar (progress reviews conducted with ministers).</li>
-                        <li>Indoor stadium complex (under construction) near the upcoming medical college.</li>
-                        <li>Inspection and related work at Karimganj Civil Hospital, Sribhumi.</li>
-                        <li>Inspection of New Co-District Office (CDC) construction at Ramkrishna Nagar.</li>
-                    </ul>
-
-                    <h3 style="color: var(--green); margin-top: 30px;"><i class="fa-solid fa-road"></i> Roads & Connectivity</h3>
-                    <ul style="list-style-type: disc; margin-left: 20px; color: var(--gray-text);">
-                        <li>Road at Kamlatilla, Ward No. 9, Ramkrishna Nagar town (₹96 lakh).</li>
-                        <li>Road from Puspapriya ME School PWD road (near Narendra Sangha Club) to Kalinagar Pt-II under Mukhya Mantrir Pakipath Nirman Achoni (₹75 lakh).</li>
-                        <li>Multiple roads under MGNREGA in Gandhinagar GP (Tengargul Ward No. 4 – ₹15 lakh; Chameli Ward No. 1 – ₹10 lakh; Chameli Bazar Ward No. 1 – ₹15 lakh).</li>
-                        <li>Other local road connectivity improvements in the constituency.</li>
-                    </ul>
-
-                    <h3 style="color: var(--green); margin-top: 30px;"><i class="fa-solid fa-book"></i> Education</h3>
-                    <ul style="list-style-type: disc; margin-left: 20px; color: var(--gray-text);">
-                        <li>New school building foundation at Dhupanpur Tribal Higher Secondary School (₹4.5 crore project as part of state-level initiative).</li>
-                        <li>Integrated Science Laboratory at Pallishree High School, Baruala GP (inaugurated).</li>
-                        <li>Model School Building foundation at Netaji Nagar High School.</li>
-                    </ul>
-
-                    <h3 style="color: var(--green); margin-top: 30px;"><i class="fa-solid fa-users"></i> Community Halls & Anganwadi Centres</h3>
-                    <ul style="list-style-type: disc; margin-left: 20px; color: var(--gray-text);">
-                        <li>Community Hall at Sannyasibari, Madhya Patiala Sanskrit Village, Patiala GP (under MLA-ADS 2025–26).</li>
-                        <li>74 No. Gobindapur Model Anganwadi Centre + Community Hall near Gobindapur Durga Mandap (under MLA-ADS 2024–25).</li>
-                        <li>Community Hall at Narayan Mandir, Mongalpur Village (under PMAGY – ₹15 lakh).</li>
-                        <li>Multiple Model Anganwadi Centres in Lalchara GP (foundation stones laid).</li>
-                    </ul>
-
-                    <h3 style="color: var(--green); margin-top: 30px;"><i class="fa-solid fa-hand-holding-heart"></i> Welfare & Other Works</h3>
-                    <ul style="list-style-type: disc; margin-left: 20px; color: var(--gray-text);">
-                        <li>Distribution of cheques to 829 beneficiaries under Chief Minister’s Atmanirbhar Asom Abhiyan (CMAAA).</li>
-                        <li>Distribution of financial assistance and certificates to ASHA workers, Anganwadi workers, and Mid-Day Meal cooks under Seva Sankalp Abhiyan.</li>
-                        <li>Unveiling of full-length statue of Atal Bihari Vajpayee at Ramkrishna Nagar Block Road.</li>
-                        <li>Unveiling of statue of Bir Lachit Barphukan at Anipur Trimukha.</li>
-                    </ul>
-
+                <!-- 1. HEALTH & MAJOR INFRASTRUCTURE -->
+                <h3 style="color: var(--saffron); margin: 40px 0 20px; font-size: 1.5rem; border-bottom: 2px solid var(--green); padding-bottom: 10px;"><i class="fa-solid fa-hospital"></i> Health & Major Infrastructure</h3>
+                <div class="grid-3">
+                    <div class="card">
+                        <img src="assets/images/medical-college.jpg" alt="Medical College" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Medical College & Hospital</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Ongoing construction of Medical College and Hospital at Ramkrishna Nagar (progress reviews conducted with ministers).</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/indoor-stadium.jpg" alt="Indoor Stadium" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Indoor Stadium Complex</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Indoor stadium complex (under construction) near the upcoming medical college.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/civil-hospital.jpg" alt="Civil Hospital" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Karimganj Civil Hospital</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Inspection and related work at Karimganj Civil Hospital, Sribhumi.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 2. ROADS & CONNECTIVITY -->
+                <h3 style="color: var(--saffron); margin: 40px 0 20px; font-size: 1.5rem; border-bottom: 2px solid var(--green); padding-bottom: 10px;"><i class="fa-solid fa-road"></i> Roads & Connectivity</h3>
+                <div class="grid-3">
+                    <div class="card">
+                        <img src="assets/images/kamlatilla-road.jpg" alt="Kamlatilla Road" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Kamlatilla Road</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Road at Kamlatilla, Ward No. 9, Ramkrishna Nagar town (₹96 lakh).</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/puspapriya-road.jpg" alt="Puspapriya ME School Road" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Puspapriya ME School Road</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Road from Puspapriya ME School PWD road to Kalinagar Pt-II under Mukhya Mantrir Pakipath Nirman Achoni (₹75 lakh).</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/mgnrega-roads.jpg" alt="MGNREGA Roads" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">MGNREGA Roads</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Multiple roads in Gandhinagar GP (Tengargul Ward No. 4 – ₹15 lakh; Chameli Ward No. 1 – ₹10 lakh; Chameli Bazar Ward No. 1 – ₹15 lakh).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. EDUCATION -->
+                <h3 style="color: var(--saffron); margin: 40px 0 20px; font-size: 1.5rem; border-bottom: 2px solid var(--green); padding-bottom: 10px;"><i class="fa-solid fa-book"></i> Education</h3>
+                <div class="grid-3">
+                    <div class="card">
+                        <img src="assets/images/dhupanpur-school.jpg" alt="Dhupanpur Tribal School" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Dhupanpur Tribal HS School</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">New school building foundation (₹4.5 crore project as part of state-level initiative).</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/pallishree-lab.jpg" alt="Science Laboratory" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Integrated Science Lab</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Integrated Science Laboratory at Pallishree High School, Baruala GP (inaugurated).</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/netaji-school.jpg" alt="Model School" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Model School Building</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Model School Building foundation laid at Netaji Nagar High School.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. COMMUNITY HALLS & ANGANWADI -->
+                <h3 style="color: var(--saffron); margin: 40px 0 20px; font-size: 1.5rem; border-bottom: 2px solid var(--green); padding-bottom: 10px;"><i class="fa-solid fa-users"></i> Community Halls & Anganwadi</h3>
+                <div class="grid-3">
+                    <div class="card">
+                        <img src="assets/images/sannyasibari-hall.jpg" alt="Sannyasibari Hall" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Sannyasibari Community Hall</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Community Hall at Madhya Patiala Sanskrit Village, Patiala GP (under MLA-ADS 2025–26).</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/gobindapur-anganwadi.jpg" alt="Gobindapur Anganwadi" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Gobindapur Model Anganwadi</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">74 No. Gobindapur Model Anganwadi Centre + Community Hall near Durga Mandap.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/mongalpur-hall.jpg" alt="Mongalpur Hall" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Mongalpur Community Hall</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Community Hall at Narayan Mandir, Mongalpur Village (under PMAGY – ₹15 lakh) & Lalchara Anganwadis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. WELFARE, HERITAGE & OTHER WORKS -->
+                <h3 style="color: var(--saffron); margin: 40px 0 20px; font-size: 1.5rem; border-bottom: 2px solid var(--green); padding-bottom: 10px;"><i class="fa-solid fa-hand-holding-heart"></i> Welfare & Heritage</h3>
+                <div class="grid-3">
+                    <div class="card">
+                        <img src="assets/images/statues.jpg" alt="Statues Unveiling" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Heritage Statues</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Unveiling of Atal Bihari Vajpayee statue at Ramkrishna Nagar Block Road & Bir Lachit Barphukan at Anipur Trimukha.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/cmaaa-cheques.jpg" alt="CMAAA Cheques" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Financial Assistance (CMAAA)</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Distribution of cheques to 829 beneficiaries under Chief Minister’s Atmanirbhar Asom Abhiyan.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/seva-sankalp.jpg" alt="Seva Sankalp Abhiyan" style="width:100%; height:200px; object-fit:cover; border-bottom: 3px solid var(--saffron);">
+                        <div style="padding: 15px;">
+                            <h4 style="color: var(--green); margin-bottom: 8px;">Seva Sankalp Abhiyan</h4>
+                            <p style="font-size: 0.9rem; color: var(--gray-text);">Financial assistance to ASHA workers, Anganwadi workers, and Mid-Day Meal cooks. Also inspected New CDC office.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
