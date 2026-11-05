@@ -45,12 +45,15 @@
     <!-- HEADER (VIP Saffron Theme) -->
     <header class="site-header">
         <div class="container header-container">
-            <div class="logo-area" style="display: flex; align-items: center; gap: 10px;">
-                <img src="assets/images/logo.png" alt="Bijoy Malakar Logo" style="height: 45px; width: 45px; border-radius: 50%; object-fit: cover; border: 2px solid white;">
-                <h1 style="margin: 0; font-size: 1.2rem; color: white; white-space: nowrap; font-weight: 700;">BIJOY MALAKAR</h1>
+            <div class="logo-area">
+                <img src="assets/images/logo.png" alt="Bijoy Malakar Logo" class="header-logo-img">
+                <div class="header-title-box">
+                    <h1 class="header-main-title">BIJOY MALAKAR</h1>
+                    <span class="header-subtitle">Member of Legislative Assembly | Ramkrishna Nagar</span>
+                </div>
             </div>
             
-            <button class="hamburger-btn" id="hamburgerBtn" style="color: white;"><i class="fa-solid fa-bars"></i></button>
+            <button class="hamburger-btn" id="hamburgerBtn"><i class="fa-solid fa-bars"></i></button>
             <nav class="desktop-nav">
                 <a href="index.html" class="active" data-i18n="nav_home">Home</a>
                 <a href="about.html" data-i18n="nav_about">Biography</a>
@@ -83,16 +86,16 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <main style="margin-top: 70px;">
+    <main class="main-content-wrap">
         
         <!-- HERO SECTION -->
-        <section class="hero-section" style="padding: 40px 20px 0; text-align: center;">
-            <img src="1793670487656.jpg" alt="Bijoy Malakar" style="width: 100%; max-width: 500px; height: auto; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 3px solid var(--saffron); margin: 0 auto; display: block;">
+        <section class="hero-section">
+            <img src="1793670487656.jpg" alt="Bijoy Malakar" class="hero-profile-img">
             
-            <div class="container text-center" style="padding: 30px 0;">
-                <h2 style="color: var(--green); font-size: 1.8rem; margin-bottom: 10px;">Bijoy Malakar</h2>
-                <p style="font-weight: 600; font-size: 1.1rem; color: var(--gray-text);">MLA, Ram Krishna Nagar (SC), Assam<br>Bharatiya Janata Party</p>
-                <p style="margin-top: 15px; color: var(--saffron); font-weight: bold;">Serving the people of Ram Krishna Nagar with commitment, development, and trust.</p>
+            <div class="container text-center hero-text-area">
+                <h2 class="hero-name">Bijoy Malakar</h2>
+                <p class="hero-designation">MLA, Ram Krishna Nagar (SC), Assam<br>Bharatiya Janata Party</p>
+                <p class="hero-tagline">Serving the people of Ram Krishna Nagar with commitment, development, and trust.</p>
             </div>
         </section>
 
@@ -101,7 +104,7 @@
             <div class="container text-center">
                 <h2 class="section-title">Message from Bijoy Malakar</h2>
                 <div class="section-line"></div>
-                <blockquote style="font-size: 1.2rem; font-style: italic; color: var(--gray-text); max-width: 800px; margin: 0 auto; border-left: 4px solid var(--saffron); padding-left: 20px; text-align: left;">
+                <blockquote class="message-quote">
                     "My responsibility is not only to represent the people of Ram Krishna Nagar, but also to stand with them in every need. Development must reach every village, every family, and every citizen. With your trust and support, we will continue working for a stronger and more prosperous Ram Krishna Nagar."
                 </blockquote>
                 <a href="about.html" class="btn btn-primary" style="margin-top: 30px;">Read Full Biography</a>
@@ -111,7 +114,7 @@
         <!-- DEVELOPMENT WORKS SECTION (Swipe/Scroll) -->
         <section class="section-padding">
             <div class="container text-center">
-                <h2 class="section-title" style="font-size: 1.5rem;">Key Development Works</h2>
+                <h2 class="section-title works-heading-main">Key Development Works</h2>
                 <div class="section-line"></div>
                 
                 <!-- Scrollable Cards Container -->
@@ -182,18 +185,18 @@
             <div class="container text-center">
                 <h2 class="section-title">Vision for Ram Krishna Nagar</h2>
                 <div class="section-line"></div>
-                <div class="grid-3" style="text-align: left;">
-                    <div class="card" style="padding: 20px; border-top: 3px solid var(--saffron);">
-                        <h4 style="color: var(--green); margin-bottom: 10px;"><i class="fa-solid fa-road"></i> Road & Infrastructure</h4>
-                        <p style="font-size: 0.9rem;">Better roads, drainage, street lighting, and public infrastructure.</p>
+                <div class="grid-3 vision-grid-box">
+                    <div class="card vision-card-item">
+                        <h4 class="vision-card-title"><i class="fa-solid fa-road"></i> Road & Infrastructure</h4>
+                        <p class="vision-card-desc">Better roads, drainage, street lighting, and public infrastructure.</p>
                     </div>
-                    <div class="card" style="padding: 20px; border-top: 3px solid var(--saffron);">
-                        <h4 style="color: var(--green); margin-bottom: 10px;"><i class="fa-solid fa-hospital"></i> Healthcare</h4>
-                        <p style="font-size: 0.9rem;">Better access to health services and awareness programmes in rural and semi-urban areas.</p>
+                    <div class="card vision-card-item">
+                        <h4 class="vision-card-title"><i class="fa-solid fa-hospital"></i> Healthcare</h4>
+                        <p class="vision-card-desc">Better access to health services and awareness programmes in rural and semi-urban areas.</p>
                     </div>
-                    <div class="card" style="padding: 20px; border-top: 3px solid var(--saffron);">
-                        <h4 style="color: var(--green); margin-bottom: 10px;"><i class="fa-solid fa-book"></i> Education</h4>
-                        <p style="font-size: 0.9rem;">Improved school facilities, educational awareness, and support for students.</p>
+                    <div class="card vision-card-item">
+                        <h4 class="vision-card-title"><i class="fa-solid fa-book"></i> Education</h4>
+                        <p class="vision-card-desc">Improved school facilities, educational awareness, and support for students.</p>
                     </div>
                 </div>
             </div>
@@ -201,8 +204,8 @@
     </main>
 
     <!-- FOOTER -->
-    <footer style="background: var(--dark-text); color: white; padding: 30px 0; text-align: center;">
-        <p style="font-weight: bold; margin-bottom: 10px;">Bijoy Malakar | Bharatiya Janata Party (BJP)</p>
+    <footer class="site-footer">
+        <p class="footer-title">Bijoy Malakar | Bharatiya Janata Party (BJP)</p>
         <p data-i18n="footer_text">&copy; 2026 Bijoy Malakar. All Rights Reserved.</p>
     </footer>
 
